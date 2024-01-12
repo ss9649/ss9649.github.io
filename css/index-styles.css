@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    background: rgba(230, 231, 232, 0.802);
+}
+
+a{
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+.center{
+    text-align: center;
+    word-spacing: 3em;
+    margin-top: 3em;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 20vh;
+}
+
+#home{
+    color: black;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    top: 18vh;
+    margin-left: 20vw;
+    position: static;
+}
+
+#p1{
+    
+    /* Set a maximum width for better readability */
+    font-size: 1.5rem;
+    /* Adjust the font size */
+    line-height: 1.6;
+    /* Set a comfortable line height */
+    margin-left: 20%;
+    margin-right: 20%;
+    /* Add some margin for spacing */
+    padding: 1rem;
+    /* Add padding for a container-like effect */
+    border-radius: 0.5rem;
+    /* Rounded corners for a stylish look */
+    background: rgba(255, 255, 255);
+    /* Semi-transparent white background */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    /* Add a subtle box shadow */
+    color: rgba(0, 0, 0, 0.848);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#p2{
+    display: inline;
+    word-spacing: 2em;
+}
+
+#word1{
+    word-spacing: 2em;
+}
+
+img{
+    width: 0.8em;
+    height: 0.8em;
+}
+
+#span1{
+    padding: 20px;
+}
+
+#namecolor{
+    color: rgb(150, 150, 150);
+}
