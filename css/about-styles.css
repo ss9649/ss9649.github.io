@@ -56,6 +56,13 @@ h1{
     /* Add a subtle box shadow */
     color: rgba(0, 0, 0, 0.848);
     font-family: 'Open Sans', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+#p1:hover{
+    /*box-shadow: 0 0 1rem rgb(75, 75, 75, 0.75);*/
+    transform: scale(1.004);
+    box-shadow: 0 0 1rem rgba(75, 75, 75, 0.615);
 }
 
 #p2{
