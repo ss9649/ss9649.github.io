@@ -11,6 +11,10 @@ a{
     font-size: 1em;
 }
 
+a:hover{
+    opacity: 0.75;
+}
+
 .center{
     text-align: center;
     word-spacing: 3em;
