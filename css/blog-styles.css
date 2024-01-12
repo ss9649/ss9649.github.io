@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body{
-    /*background: rgba(238, 239, 241, 0.92);*/
+    background: rgba(238, 239, 241, 0.92);
     /*background: rgba(135, 206, 235, 0.5);*/
-    background: rosybrown;
+    /*background: rosybrown;*/
 }
 
 a{
@@ -37,12 +37,20 @@ h1{
     top: 18vh;
     margin-left: 20vw;
     position: static;
-    color: white;
+    color: black;
 }
 
-#p1{
+h2{
+    font-family: 'Open Sans', sans-serif;
+    top: 18vh;
+    margin-left: 20vw;
+    position: static;
+    color: black;
+}
+
+.aboutme{
     /* Set a maximum width for better readability */
-    font-size: 1.5rem !important;
+    font-size: 0.90rem !important;
     /* Adjust the font size */
     line-height: 1.6;
     /* Set a comfortable line height */
@@ -51,7 +59,7 @@ h1{
     /* Add some margin for spacing */
     padding: 1rem;
     /* Add padding for a container-like effect */
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     /* Rounded corners for a stylish look */
     background: rgba(255, 255, 255);
     /* Semi-transparent white background */
@@ -81,4 +89,21 @@ img{
 
 #namecolor{
     color: rgb(150, 150, 150);
+}
+
+#github{
+    color: royalblue;
+    border: 1px solid royalblue;
+    padding: 2px;
+}
+
+#nextheader{
+    font-size: 1.25rem;
+    display: inline;
+}
+
+#ind{
+    color: black;
+    border: 1px solid black;
+    padding: 2px;
 }
