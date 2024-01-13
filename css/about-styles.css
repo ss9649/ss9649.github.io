@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
-    /*background: rgba(238, 239, 241, 0.92);*/
-    background: rgba(46, 139, 86, 0.375);
+    background: rgba(238, 239, 241, 0.92);
+    /*background: rgba(46, 139, 86, 0.375);*/
 }
 
 a{
     /*color: rgb(150, 150, 150);*/
-    color: white;
+    color: rgb(150, 150, 150);
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
@@ -33,16 +34,25 @@ a:hover{
 }
 
 h1{
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    top: 18vh;
+    margin-left: 20vw;
+    position: static;
+    color: black;
+}
+
+h2{
     font-family: 'Open Sans', sans-serif;
     top: 18vh;
     margin-left: 20vw;
     position: static;
-    color: white;
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 1.2em;
 }
 
 #p1{
     /* Set a maximum width for better readability */
-    font-size: 1.5rem !important;
+    font-size: 1.25em;
     /* Adjust the font size */
     line-height: 1.6;
     /* Set a comfortable line height */
@@ -51,22 +61,22 @@ h1{
     /* Add some margin for spacing */
     padding: 1rem;
     /* Add padding for a container-like effect */
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     /* Rounded corners for a stylish look */
     background: rgba(255, 255, 255);
     /* Semi-transparent white background */
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     /* Add a subtle box shadow */
     color: rgba(0, 0, 0, 0.848);
-    font-family: 'Open Sans', sans-serif;
-    transition: transform 0.3s ease;
+    font-family: 'Open Sans', 'Poppins', sans-serif;
+    /*transition: transform 0.15s ease-in;*/
 }
 
-#p1:hover{
-    /*box-shadow: 0 0 1rem rgb(75, 75, 75, 0.75);*/
+/*#p1:hover{
+    /*box-shadow: 0 0 1rem rgb(75, 75, 75, 0.75);
     transform: scale(1.004);
     box-shadow: 0 0 1rem rgba(75, 75, 75, 0.615);
-}
+}*/
 
 #p2{
     display: inline;

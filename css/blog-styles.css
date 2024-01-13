@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
     background: rgba(238, 239, 241, 0.92);
@@ -33,19 +34,33 @@ a:hover{
 }
 
 h1{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
     top: 18vh;
     margin-left: 20vw;
     position: static;
     color: black;
+    font-size: 2em;
 }
+
 
 h2{
     font-family: 'Open Sans', sans-serif;
     top: 18vh;
     margin-left: 20vw;
     position: static;
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 1.05em;
+}
+
+#firstlink{
     color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+#firstlink:hover{
+    opacity: 0.8;
+    color: blue;
 }
 
 .aboutme{
@@ -67,6 +82,12 @@ h2{
     /* Add a subtle box shadow */
     color: rgba(0, 0, 0, 0.848);
     font-family: 'Open Sans', sans-serif;
+    transition: transform 0.15s ease-in;
+}
+
+.aboutme:hover{
+    transform: scale(1.004);
+    box-shadow: 0 0 1rem rgba(75, 75, 75, 0.615);
 }
 
 #p2{
@@ -91,9 +112,9 @@ img{
     color: rgb(150, 150, 150);
 }
 
-#github{
-    color: royalblue;
-    border: 1px solid royalblue;
+#education{
+    color: rosybrown;
+    border: 1px solid rosybrown;
     padding: 2px;
 }
 
