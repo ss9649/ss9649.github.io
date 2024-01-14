@@ -105,6 +105,11 @@ h2{
 
 #word1{
     word-spacing: 2em;
+    color: rgb(96, 138, 163);
+}
+
+#github{
+    color: rgb(96, 138, 163);
 }
 
 img{
@@ -117,7 +122,10 @@ img{
 }
 
 #namecolor{
+    /*color: rgb(150, 150, 150);*/
     color: rgb(150, 150, 150);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
 }
 
 #education{
