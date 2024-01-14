@@ -72,6 +72,19 @@ h2{
     /*transition: transform 0.15s ease-in;*/
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#p1 {
+    animation: fadeIn 750ms ease-in-out;
+}
+
 /*#p1:hover{
     /*box-shadow: 0 0 1rem rgb(75, 75, 75, 0.75);
     transform: scale(1.004);
