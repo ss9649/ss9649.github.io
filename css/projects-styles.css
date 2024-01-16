@@ -108,13 +108,20 @@ img{
 }
 
 #namecolor{
+    /*color: rgb(150, 150, 150);*/
     color: rgb(150, 150, 150);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
 }
 
 #github{
     color: royalblue;
     border: 1px solid royalblue;
     padding: 2px;
+}
+
+#github-profile{
+    color: rgb(96, 138, 163);
 }
 
 #nextheader{
@@ -132,4 +139,9 @@ img{
     color: darkorange;
     border: 1px solid darkorange;
     padding: 2px;
+}
+
+#linkedin{
+    /*word-spacing: 2em;*/
+    color: rgb(96, 138, 163);
 }

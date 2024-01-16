@@ -68,6 +68,11 @@ h2{
     color: rgb(96, 138, 163);
 }
 
+#linkedin{
+    /*word-spacing: 2em;*/
+    color: rgb(96, 138, 163);
+}
+
 .aboutme{
     /* Set a maximum width for better readability */
     font-size: 0.90rem !important;
