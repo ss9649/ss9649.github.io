@@ -85,13 +85,13 @@ h2{
     /* Add a subtle box shadow */
     color: rgba(0, 0, 0, 0.848);
     font-family: 'Open Sans', sans-serif;
-    transition: transform 0.15s ease-in;
+    /*transition: transform 0.15s ease-in;*/ /*no animation for home page*/
 }
 
-.aboutme:hover{
+/*.aboutme:hover{
     transform: scale(1.004);
     box-shadow: 0 0 1rem rgba(75, 75, 75, 0.615);
-}
+}*/
 
 #p1{
     font-size: 1.15em;
@@ -143,4 +143,16 @@ img{
     color: black;
     border: 1px solid black;
     padding: 2px;
+}
+
+#paragraphnamecolor{
+    color: rgb(96, 138, 163);
+}
+
+#emailcolor{
+    color: rgb(96, 138, 163);
+}
+
+#emailcolor::selection{
+    background: rgba(150, 150, 255, 0.256);
 }
