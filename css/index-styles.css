@@ -66,25 +66,17 @@ h2{
     border-bottom: 1em;
 }
 
-.aboutme{
-    /* Set a maximum width for better readability */
-    font-size: 0.90rem !important;
-    /* Adjust the font size */
-    line-height: 1.6;
-    /* Set a comfortable line height */
-    margin-left: 20%;
-    margin-right: 20%;
-    /* Add some margin for spacing */
-    padding: 1rem;
-    /* Add padding for a container-like effect */
-    border-radius: 0.3rem;
-    /* Rounded corners for a stylish look */
-    background: rgba(255, 255, 255);
-    /* Semi-transparent white background */
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-    /* Add a subtle box shadow */
-    color: rgba(0, 0, 0, 0.848);
-    font-family: 'Open Sans', sans-serif;
+.aboutme{ /*paragraph styling*/
+    font-size: 0.90rem !important; /* Font size */
+    line-height: 1.6; /*Line height for better eadability*/
+    margin-left: 20%; /*Addding left margin for spacing*/
+    margin-right: 20%; /*Addding right margin for spacing*/
+    padding: 1rem; /*Padding for a "container effect"*/
+    border-radius: 0.3rem; /*Rounded corners*/
+    background: rgba(255, 255, 255); /*White background*/
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /*Subtle box shadow */
+    color: rgba(0, 0, 0, 0.848); /*Text color*/
+    font-family: 'Open Sans', sans-serif; /*font family in most to least important order*/
     /*transition: transform 0.15s ease-in;*/ /*no animation for home page*/
 }
 
@@ -154,5 +146,6 @@ img{
 }
 
 #emailcolor::selection{
-    background: rgba(150, 150, 255, 0.256);
+    background: rgba(58, 131, 158);
+    color: white;
 }

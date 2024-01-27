@@ -82,7 +82,7 @@ h2{
 }
 
 #p1 {
-    animation: fadeIn 750ms ease-in-out;
+    animation: fadeIn 500ms ease-in-out; /*disable animations for now*/
 }
 
 /*#p1:hover{
