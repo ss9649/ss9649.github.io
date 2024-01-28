@@ -1,35 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /*imported fonts from Google Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /*imported fonts from Google, Poppins*/
 
 body{
     background: rgba(238, 239, 241, 0.92);
-    /*background: rgba(135, 206, 235, 0.5);*/
-    /*background: rosybrown;*/
+    /*background: rgba(135, 206, 235, 0.5);*/ /*colors reserved for later*/
+    /*background: rosybrown;*/ /*colors reserved for later*/
 }
 
 a{
-    color: rgb(150, 150, 150);
+    color: rgb(150, 150, 150); 
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
 }
 
 a:hover{
-    opacity: 0.75;
+    opacity: 0.75; /*change opacity on hover for all links*/
 }
 
-.center{
-    text-align: center;
+.center{ /*header for all links*/
+    text-align: center; 
     word-spacing: 3em;
     margin-top: 3em;
 }
 
-.footer{
+.footer{ /*footer alignment*/
     text-align: center;
     margin-top: 20vh;
 }
 
-#home{ /*this is for the blog link*/
+#home{ /*the page the user is currently on is darker than the other links, style choice*/
     color: black;
 }
 
@@ -42,7 +42,6 @@ h1{
     font-size: 2em;
 }
 
-
 h2{
     font-family: 'Open Sans', sans-serif;
     top: 18vh;
@@ -52,7 +51,7 @@ h2{
     font-size: 1.05em;
 }
 
-#firstlink{
+#firstlink{ /*title for the main card on the page*/
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
