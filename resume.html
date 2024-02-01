@@ -43,3 +43,13 @@
 
     </body>
 </html>
+
+<script>
+    // Remove .html extension
+     var currentPath = window.location.pathname;
+     if (currentPath.endsWith('.html')) 
+     {
+         var newPath = "resume"
+         history.replaceState({}, '', newPath);
+     }
+ </script>
