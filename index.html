@@ -42,16 +42,5 @@
 </html>
 
 <script>
-   // Get the current path
-    const currentPath = window.location.pathname;
-
-    // Check if the current path has a file extension (e.g., .html)
-    const hasFileExtension = currentPath.includes('.html');
-
-    // If there's a file extension, remove it
-    if (hasFileExtension) 
-    {
-        const newPath = currentPath.replace('.html', 'home');
-        history.replaceState({}, '', newPath);
-    }
+   history.replaceState({}, '', `/${home}`)
 </script>
