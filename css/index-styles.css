@@ -151,6 +151,22 @@ img{
 
 @media (max-width: 1200px){
     .center{
+        font-size: 1.45rem;
+    }
+
+    .footer{
+        font-size: 1.45rem;
+    }
+
+    .aboutme{
+        font-size: 1.70rem;
+    }
+
+    h1{
         font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.85rem;
     }
 }
