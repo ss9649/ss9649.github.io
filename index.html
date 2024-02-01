@@ -40,3 +40,13 @@
 
     </body>
 </html>
+
+<script>
+    // Remove .html extension
+    var currentPath = window.location.pathname;
+    if (currentPath.endsWith('.html')) 
+    {
+        var newPath = currentPath.slice(0, -5); // Remove last 5 characters (.html)
+        history.replaceState({}, '', newPath);
+    }
+</script>
