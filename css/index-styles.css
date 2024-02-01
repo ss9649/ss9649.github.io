@@ -158,8 +158,10 @@ img{
         font-size: 1.45rem;
     }
 
-    .aboutme #p1 #firstlink{
+    .aboutme{
         font-size: 3rem;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 
     h1{
