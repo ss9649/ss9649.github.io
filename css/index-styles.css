@@ -148,3 +148,9 @@ img{
     background: rgba(58, 131, 158);
     color: white;
 }
+
+@media (max-width: 1200px){
+    .center{
+        font-size: 2rem;
+    }
+}
