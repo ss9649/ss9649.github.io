@@ -71,7 +71,7 @@ h2{
     margin-left: 20%; /*Addding left margin for spacing*/
     margin-right: 20%; /*Addding right margin for spacing*/
     padding: 1rem; /*Padding for a "container effect"*/
-    border-radius: 0.3rem; /*Rounded corners*/
+    border-radius: 0.65rem; /*Rounded corners*/
     background: rgba(255, 255, 255); /*White background*/
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /*Subtle box shadow */
     color: rgba(0, 0, 0, 0.848); /*Text color*/
