@@ -3,7 +3,6 @@
 <html>
     <head>
         <title>Home</title>
-        <base href="/home">
         <meta charset="UTF-8">
         <!-- this is a typical feature, but it does not help with mobile sizing, so I have omitted it -->
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -44,17 +43,15 @@
 </html>
 
 <script>
-        // Remove .html extension and handle GitHub Pages routing
-        document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
         var currentPath = window.location.pathname;
-        
+
         // Remove .html extension
         if (currentPath.endsWith('.html')) {
-            var newPath = currentPath.replace(/\.html$/, '/home');
+            var newPath = currentPath.replace(/\.html$/, '');
 
-            // Update for GitHub Pages: Add the repository name before the path
-            var repoName = 'ss9649.github.io'; // Replace with your GitHub repository name
-            newPath = '/' + repoName + newPath;
+            // Check if newPath is empty and set it to '/' for the homepage
+            newPath = newPath === '/' ? '/' : newPath;
 
             history.replaceState({}, '', newPath);
         }
