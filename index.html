@@ -44,11 +44,19 @@
 </html>
 
 <script>
-    // Remove .html extension
-    var currentPath = window.location.pathname;
-    if (currentPath.endsWith('.html')) 
-    {
-        var newPath = "/home"
-        history.replaceState({}, '', newPath);
-    }
+        // Remove .html extension and handle GitHub Pages routing
+        document.addEventListener('DOMContentLoaded', function() {
+        var currentPath = window.location.pathname;
+        
+        // Remove .html extension
+        if (currentPath.endsWith('.html')) {
+            var newPath = currentPath.replace(/\.html$/, 'home');
+
+            // Update for GitHub Pages: Add the repository name before the path
+            var repoName = 'ss9649.github.io'; // Replace with your GitHub repository name
+            newPath = '/' + repoName + newPath;
+
+            history.replaceState({}, '', newPath);
+        }
+    });
 </script>
