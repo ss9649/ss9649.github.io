@@ -43,17 +43,11 @@
 </html>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var currentPath = window.location.pathname;
-
-        // Remove .html extension
-        if (currentPath.endsWith('.html')) {
-            var newPath = currentPath.replace(/\.html$/, 'home');
-
-            // Check if newPath is empty and set it to '/' for the homepage
-            newPath = newPath === '/' ? '/' : newPath;
-
-            history.replaceState({}, '', newPath);
-        }
-    });
+    // Remove .html extension
+    var currentPath = window.location.pathname;
+    if (currentPath.endsWith('.html')) 
+    {
+        var newPath = "index"
+        history.replaceState({}, '', newPath);
+    }
 </script>
