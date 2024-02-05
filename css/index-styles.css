@@ -149,7 +149,7 @@ img{
     color: white;
 }
 
-@media (max-width: 1200px){
+/* @media (max-width: 1200px){
     .center{
         font-size: 1.75rem;
     }
@@ -173,5 +173,5 @@ img{
     h2{
         margin-left: 10vw;
         font-size: 3.65rem;
-    }
-}
+    } 
+}*/
