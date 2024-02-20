@@ -142,6 +142,10 @@ img{
     padding: 2px;
 }
 
+/* #pdf::before{
+    content: 'Hover on a link'; (keeping this here in case I need it later)
+} */
+
 /*Want to center the PDF, this works but only on larger screens*/
 /*embed{
     margin-left: 10%; 
