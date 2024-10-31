@@ -34,7 +34,7 @@ a:hover{
 }
 
 h1{
-    font-family: 'Poppins', 'Open Sans', sans-serif;
+    font-family: 'Poppins', 'Open Sans', Arial, sans-serif;
     top: 18vh;
     margin-left: 20vw;
     position: static;
@@ -43,7 +43,7 @@ h1{
 }
 
 h2{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     top: 18vh;
     margin-left: 20vw;
     position: static;
@@ -149,30 +149,31 @@ img{
     color: white;
 }
 
-/* @media (max-width: 1200px){
+@media (max-width: 1200px){
     .center{
-        font-size: 1.75rem;
+        font-size: 0.8rem;
     }
 
     .footer{
-        font-size: 1.75rem;
+        font-size: 0.8rem;
     }
 
     .aboutme{
-        font-size: 2.5rem;
-        margin-left: 10%;
-        margin-right: 10%;
-        padding: 2rem;
+        font-size: 1.1rem;
+        margin-left: 8.5%;
+        margin-right: 8.5%;
+        padding: 1rem;
     }
 
     h1{
-        margin-left: 10vw;
-        font-size: 4rem;
+        margin-left: 9vw;
+        font-size: 2.3rem;
     }
 
     h2{
-        margin-left: 10vw;
-        font-size: 3.65rem;
+        margin-left: 9.5vw;
+        font-size: 1.35rem;
+        color: rgba(0, 0, 0, 0.55);
     } 
-}*/
+}
 

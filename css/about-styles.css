@@ -191,3 +191,57 @@ img{
     height: 0.8em; /* Maintain the size of the image */
     margin-top: 5px;
 }
+
+@media (max-width: 1200px){
+    nav ul{
+        font-size: 0.75rem;
+        gap: 1.75em;
+    }
+
+    .footer{
+        font-size: 0.8rem;
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .aboutme{
+        font-size: 1.1rem;
+        margin-left: 8.5%;
+        margin-right: 8.5%;
+        padding: 1rem;
+    }
+
+    #newheader{
+        /* font-size: 1.65rem;
+        position: relative; */
+        color: transparent; /*hide text*/
+        user-select: none; /*disallow user from highlighting stuff*/
+    } 
+
+    h2{
+        margin-left: 9.5vw;
+        font-size: 1.35rem;
+        color: rgba(0, 0, 0, 0.55);
+    } 
+
+    .accordion-content header{
+        padding: 15px;
+     }
+     
+     .accordion-content .description{
+        /* font-size: 12px; */
+        font-size: 1em;
+        color: #333;
+        font-weight: 400;
+        padding: 0 15px;
+        height: 0;
+        transition: all 0.2s linear;
+     }
+
+     .accordion{
+        max-width: 80%;
+     }
+
+    
+}
+
