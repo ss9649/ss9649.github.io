@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /*imported fonts from Google, Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /*imported fonts from Google, Poppins*/
 
 body{
     background: rgba(238, 239, 241, 0.92);
-    /*background: rgba(46, 139, 86, 0.375);*/
 }
 
 a{
-    /*color: rgb(150, 150, 150);*/
     color: rgb(150, 150, 150);
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
@@ -51,24 +49,16 @@ h2{
 }
 
 #p1{
-    /* Set a maximum width for better readability */
-    font-size: 1.25em;
-    /* Adjust the font size */
-    line-height: 1.6;
-    /* Set a comfortable line height */
-    margin-left: 20%;
-    margin-right: 20%;
-    /* Add some margin for spacing */
-    padding: 1rem;
-    /* Add padding for a container-like effect */
-    border-radius: 0.3rem;
-    /* Rounded corners for a stylish look */
-    background: rgba(255, 255, 255);
-    /* Semi-transparent white background */
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-    /* Add a subtle box shadow */
-    color: rgba(0, 0, 0, 0.848);
-    font-family: 'Open Sans', 'Poppins', sans-serif;
+    font-size: 1.25em; /*adjust the font size */
+    line-height: 1.6; /*set a comfortable line height */
+    margin-left: 20%; /*add some margin for spacing */
+    margin-right: 20%; /*add some margin for spacing */
+    padding: 1rem; /*add padding for a container-like effect */
+    border-radius: 0.3rem; /*rounded corners for a stylish look */
+    background: rgba(255, 255, 255);/*semi-transparent white background */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /*add a subtle box shadow */
+    color: rgba(0, 0, 0, 0.848); /*text color*/
+    font-family: 'Open Sans', 'Poppins', sans-serif; 
     /*transition: transform 0.15s ease-in;*/
 }
 
@@ -111,14 +101,12 @@ img{
 }
 
 #namecolor{
-    /*color: rgb(150, 150, 150);*/
     color: rgb(150, 150, 150);
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
 }
 
 #linkedin{
-    /*word-spacing: 2em;*/
     color: rgb(96, 138, 163);
 }
 

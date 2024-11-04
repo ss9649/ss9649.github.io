@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /*imported fonts from Google, Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /*imported fonts from Google, Poppins*/
+ 
 body{
     background: rgba(238, 239, 241, 0.92);
-    /*background: rgba(135, 206, 235, 0.5);*/
-    /*background: rosybrown;*/
 }
 
 a{
@@ -63,15 +61,15 @@ h2{
 }
 
 .aboutme{
-    font-size: 0.90rem !important; /*Font size*/
-    line-height: 1.6; /*Line height for better eadability*/
-    margin-left: 20%; /*Addding left margin for spacing*/
-    margin-right: 20%; /*Addding right margin for spacing*/
-    padding: 1rem; /*Padding for a "container effect"*/
-    border-radius: 0.3rem; /*Rounded corners*/
-    background: rgba(255, 255, 255); /*White background*/
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /*Subtle box shadow */
-    color: rgba(0, 0, 0, 0.848); /*Text color*/
+    font-size: 0.90rem !important; /*font size*/
+    line-height: 1.6; /*line height for better readability*/
+    margin-left: 20%; /*adding left margin for spacing*/
+    margin-right: 20%; /*adding right margin for spacing*/
+    padding: 1rem; /*padding for a "container effect"*/
+    border-radius: 0.3rem; /*rounded corners*/
+    background: rgba(255, 255, 255); /*white background*/
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); /*subtle box shadow */
+    color: rgba(0, 0, 0, 0.848); /*text color*/
     font-family: 'Open Sans', sans-serif; /*font family in most to least important order*/
     transition: transform 0.15s ease-in; 
 }
@@ -100,7 +98,6 @@ img{
 }
 
 #namecolor{
-    /*color: rgb(150, 150, 150);*/
     color: rgb(150, 150, 150);
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
@@ -134,6 +131,5 @@ img{
 }
 
 #linkedin{
-    /*word-spacing: 2em;*/
     color: rgb(96, 138, 163);
 }
