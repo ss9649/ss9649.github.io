@@ -168,5 +168,9 @@ img{
         font-size: 1.35rem;
         color: rgba(0, 0, 0, 0.55);
     } 
+
+    iframe{
+        height: 750px;
+    }
 }
 
