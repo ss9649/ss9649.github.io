@@ -20,7 +20,8 @@
         gtag('config', 'G-CJ7RWKXCV2');
     </script>
 
-    <a id="gototop"></a> <!--invisible link to go back to the top-->
+    <!-- <a id="gototop"></a> invisible link to go back to the top -->
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button> -->
 
     <body>
 
@@ -56,7 +57,7 @@
 
         <div class="aboutme"> <!--contact us-->
              <h1>Direct Contact:</h1> <!--title-->
-             <h2>If you are interested, please leave me a message! <a id="mylink" href="#gototop">(Go Back Above Instead)</a></h2> <br />
+             <h2>If you are interested, please leave me a message! <br/> <a id="mylink" href="#gototop">(Click To Go Back Above)</a></h2> <br />
 
              <div class="form">
                 <form method="post" action="https://api.web3forms.com/submit"> <!--FORM START-->
@@ -93,19 +94,11 @@
     </body>
 </html>
 
-<!-- <script> does not send you to the right page if you send an email and click go back.
-     //remove .html extension
-     var currentPath = window.location.pathname;
-     if (currentPath.endsWith('.html')) 
-     {
-         var newPath = "resume"
-         history.replaceState({}, '', newPath);
-     }
-
-     else if(currentPath.endswith('/success'))
-     {
-        var newPath = "resume.html"
-        history.replaceState({}, '', newPath);
-     }
-</script> -->
+<script> 
+    document.getElementById("mylink").addEventListener("click", function (event) 
+    {
+        event.preventDefault(); //prevent default anchor behavior
+        window.scrollTo({ top: 0, behavior: "smooth" }); //smooth scroll to the top
+    });  
+</script> 
 
