@@ -229,12 +229,12 @@ img{
     }
 
     h1{
-        margin-left: 9vw;
+        /* margin-left: 9vw; */
         font-size: 2.3rem;
     }
 
     h2{
-        margin-left: 9.5vw;
+        /* margin-left: 9.5vw; */
         font-size: 1.35rem;
         color: rgba(0, 0, 0, 0.55);
     } 
