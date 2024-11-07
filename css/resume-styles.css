@@ -5,6 +5,10 @@ body{
     background: rgba(238, 239, 241, 0.92);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     color: rgb(150, 150, 150);
     text-decoration: none;

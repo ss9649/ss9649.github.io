@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+    <a id="gototop"></a> <!--invisible link to go back to the top-->
     <head>
         <title>Resume</title>
         <link rel="stylesheet" href="css/resume-styles.css">
@@ -54,10 +55,11 @@
 
         <div class="aboutme"> <!--contact us-->
              <h1>Direct Contact:</h1> <!--title-->
-             <h2>If you are interested, please leave me a message!</h2> <br />
+             <h2>If you are interested, please leave me a message! <a id="mylink" href="#gototop">(Go Back Above Instead)</a></h2> <br />
 
              <div class="form">
-                <form method="post" action="send-email.php"> <!--FORM START-->
+                <form method="post" action="https://api.web3forms.com/submit"> <!--FORM START-->
+                <input type="hidden" name="access_key" value="3a2fc335-37b9-4680-bb1b-9719ecea1df9">
                 <div class="form-items">
                     <input type="text" name="name" class="input" placeholder="Name" required> 
                     <i class="fas fa-user"></i>
@@ -90,7 +92,7 @@
     </body>
 </html>
 
-<script>
+<!-- <script> does not send you to the right page if you send an email and click go back.
      //remove .html extension
      var currentPath = window.location.pathname;
      if (currentPath.endsWith('.html')) 
@@ -98,4 +100,11 @@
          var newPath = "resume"
          history.replaceState({}, '', newPath);
      }
-</script>
+
+     else if(currentPath.endswith('/success'))
+     {
+        var newPath = "resume.html"
+        history.replaceState({}, '', newPath);
+     }
+</script> -->
+
