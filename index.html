@@ -1,65 +1,415 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-    <head>
-        <title>Home</title>
-        <meta charset="UTF-8">
-        <!-- this is a typical feature, but it does not help with mobile sizing, so I have omitted it -->
-        <meta name="viewport" content="width=device-width, initial-scale=0.60">
-        <link rel="stylesheet" href="css/index-styles.css">
-        <link rel="icon" href="assets/8664843_pen_to_square_icon (1).png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shobhit Sharma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="assets/letter-s.png">
+    <script src="https://kit.fontawesome.com/df8492a9bc.js" crossorigin="anonymous"></script>
+</head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJ7RWKXCV2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+<body>
 
-        gtag('config', 'G-CJ7RWKXCV2');
-    </script>
+    <nav id="desktop-nav">
 
-    <body>
-
-        <div class="center">
-            <a href="index.html" id="home">Home</a>
-            <!-- <a href="about.html">About</a> -->
-            <a href="resume.html">Resume</a>
-            <a href="projects.html">Projects</a>
-            <a href="coursework.html">Coursework</a>
+        <div class="logo">
+            <span>Shobhit Sharma</span>
         </div>
 
-        <br /> <br /> <br /> <br /> <br />
-
-        <h1>Home</h1> 
-
-        <h2>Welcome!</h2> <br />
-
-        <div class="aboutme">
-            <p id="firstlink" title="">Thank you for visiting!</p>
-            <p id="p1">
-                My name is <span id="paragraphnamecolor">Shobhit Sharma</span> and I am a software engineering student at Rochester Institute of Technology
-                (RIT). This is my personal home on the web! <br> <br>I am currently looking for a 
-                Spring 2025 PM, quality assurance, or software engineering co-op. Please contact me at <span id="emailcolor">ss9649@rit.edu</span> if you are interested!
-            </p>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li> <!--Shift Option Press Down to copy line-->
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
 
-        <div class="footer">
-            <span id="namecolor" title="Copyright Shobhit Sharma 2023-2024">&#169; 2024 Shobhit Sharma</span> <span id="span1"><p id="p2">•</p></span>
-            <img src="assets/298822_github_mark_icon.png"><a href="https://github.com/ss9649" target="_blank" id="github" title="View my GitHub profile"> GitHub</a> <span id="span1"><p id="p2">•</p></span>
-            <img src="assets/linkedinpng.svg"><a href="https://www.linkedin.com/in/shobhitsharmarit/" target="_blank" id="linkedin" title="View my LinkedIn profile"> LinkedIn</a>
+    </nav>
+
+    <!-- HAMBURGER Section -->
+    <nav id="hamburger-nav">
+
+        <div class="logo">Shobhit Sharma</div>
+
+        <div class="hamburger-menu">
+             <!--onclick, when clicked, toggle the menu animation-->
+             <!-- each span element is the line of the hamburger menu, styled separately -->
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span> 
+                <span></span>
+                <span></span>
+            </div>
+
+        <div class="menu-links"> <!--links that will be opened when hamburger is opened-->
+            <li><a href="#about" onclick="toggleMenu()">About</a></li> <!--Shift Option Press Down to copy line-->
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> <!--onclick is added here for closing, not just opening-->
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> <!--when one one of these is clicked, make sure menu goes away-->
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
 
-    </body>
+        </div>
+    </nav>
+
+    <section id="profile"> <!--hero section-->
+
+        <!-- <div class="section__pic-container">
+            <img src="assets/profile-pic.png" alt="Shobhit Sharma profile pic">
+        </div> -->
+
+        <div class="section__text">
+            <p id="intro-text" class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Shobhit Sharma</h1>
+            <p class="section__text__p2">Software Engineering Student</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('assets/ShobhitSharmaResume.pdf')">View Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+            </div>
+
+            <div id="socials-container">
+                <img src="assets/linkedin.png" id="linkedin" alt="My LinkedIn Profile" class="icon" onclick="window.open('https://www.linkedin.com/in/shobhitsharmarit/', '_blank')">
+                <img src="assets/github.png" id="github" alt="My GitHub Profile" class="icon" onclick="window.open('https://github.com/ss9649', '_blank')">                
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about">
+
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+
+        <div class="section-container">
+            <!-- <div class="section__pic-container">
+                <img src="assets/about-pic.png" alt="Profile Picture" class="about-pic"/>
+            </div> -->
+
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="assets/experience.png" id="normal-img" alt="Experience Icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>3rd Year Student<br />At Rochester Institute of Technology</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img src="assets/education.png" id="normal-img" alt="Education Icon" class="icon"/>
+                        <h3>Education (Pursuing)</h3>
+                        <p>B.S. Software Engineering,<br />Rochester Institute of Technology</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <p>Thank you for stopping by! I am a third year software engineering student
+                        at Rochester Institute of Technology (RIT). This is my personal home on 
+                        the web! I am currently looking for a Spring 2025 co-op in software 
+                        engineering, quality assurance, or product management. 
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <img src="assets/arrow.png" alt="Arrow Icon To Send You To Next Section" class="icon arrow" onclick="location.href='#experience'" />
+
+    </section>
+
+    <section id="experience">
+
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Learning Now</p>
+                  </div>
+                </article>
+
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Figma UI</h3> <!--JavaScript, Basic - to fix spacing, fine for now-->
+                    <p>Learning Now</p>
+                  </div>
+                </article>
+
+                <!-- <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TypeScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article> -->
+
+                <!-- <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Material UI</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article> -->
+
+              </div>
+            </div>
+
+            <div class="details-container">
+              <h2 class="experience-sub-title">Backend and Other Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PHP</h3>
+                    <p>Learning Now</p>
+                  </div>
+                </article>
+
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>SQL/MySQL</h3>
+                    <p>Learning Now</p>
+                  </div>
+                </article>
+
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+
+                <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Git</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>GitHub</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'"/>
+
+      </section>
+
+      <section id="projects">
+
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">E-Commerce Site</h2>
+                <div class="article-container">
+                    <img src="assets/portfolio-project-1.png" alt="Project 1" class="project-img" />
+                    <p class="pp11" id="pp1">[Private Repository] A fullstack e-commerce website I created alongside 
+                        three other teammates at Rochester Institute of Technology. 
+                        Stack: Angular, Java Spring Boot (REST API support), Mockito/JUnit unit testing, and Docker.</p>
+                </div>
+
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/ss9649', '_blank')">
+                        GitHub
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/ss9649', '_blank')">
+                        Live Demo
+                    </button> -->
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Personal Site</h2> 
+                <div class="article-container">
+                    <img src="assets/portfolio-project-2.png" alt="Project 2" class="project-img" />
+                    <p class="pp12" id="pp1">[Live Site] This is the site you're viewing right now! Designed to showcase my basic frontend skills in HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/ss9649', '_blank')">
+                        GitHub
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/ss9649', '_blank')">
+                        Live Demo
+                    </button> -->
+                </div>
+            </div>
+
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Rush Hour</h2>
+                <div class="article-container">
+                    <img src="assets/portfolio-project-3.png" alt="Project 3" class="project-img" />
+                    <p class="pp13" id="pp1">[Closed Repository] JavaFX simulation of the "Rush Hour" game, created with a team of two. 
+                        Developed with VSCode and Git/GitHub. Applied the Model-View-Controller (MVC) architectural pattern and event-driven programming logic for design and creation.</p>
+                </div>
+
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/ss9649', '_blank')">
+                        GitHub
+                    </button>
+                    <!-- <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/ss9649', '_blank')">
+                        Live Demo
+                    </button> -->
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <img src="assets/arrow.png" alt="Arrow Icon To Send You To Next Section" class="icon arrow" onclick="location.href='#contact'" />
+
+      </section>
+
+
+      <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="Email Icon" class="icon contact-icon email-icon"/>
+                <p> <a href="#contact-form">ss9649@rit.edu</a> &nbsp; &nbsp;</p>
+            </div>
+
+            <div class="overlay" id="contact-form">
+                <div class="wrapper">
+                    <h2>Direct Contact:</h2>
+                    <a href="#contact" class="close">&times;</a>
+                    <div class="content">
+                        <div class="container">
+                            <form method="post" action="https://api.web3forms.com/submit">
+                                <input type="hidden" name="access_key" value="3a2fc335-37b9-4680-bb1b-9719ecea1df9">
+                                <label>Name <i id="first_name" class="fa-solid fa-user"></i> </label>
+                                <input required name="name" type="text" placeholder="Your Name">
+                                <!-- <label>Last Name  <i id="last_name" class="fa-solid fa-user"></i> </label>
+                                <input required name="last_name" type="text" placeholder="Your Last Name"> -->
+                                <label>Email <i class="fas fa-envelope"></i> </label>
+                                <input required name="email" type="text" placeholder="Your Email">
+                                <label>Message <i class="fa-solid fa-pen"></i> </label>
+                                <textarea required name="message" placeholder="Your Message..."></textarea>
+                                <input name="submit" type="submit" value="Submit" >
+                                <input type="hidden" name="redirect" value="index.html">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon"/>
+                <p> <a href="https://www.linkedin.com/in/shobhitsharmarit/" target="_blank">LinkedIn</a></p>
+            </div> 
+        </div>
+      </section>
+   </div>
+
+      <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li> <!--Shift Option Press Down to copy line-->
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Shobhit Sharma. All Rights Reserved.</p>
+      </footer>
+
+    <script src="script.js"></script>
+    
+</body>
 </html>
-
-<script>
-    //remove .html extension
-    var currentPath = window.location.pathname;
-    if (currentPath.endsWith('.html')) 
-    {
-        var newPath = "index"
-        history.replaceState({}, '', newPath);
-    }
-</script>
