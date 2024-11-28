@@ -53,6 +53,10 @@
     .about-containers{
         margin-top: 6rem;
     }
+
+    #Web3Forms{
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width: 600px){
