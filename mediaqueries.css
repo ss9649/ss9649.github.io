@@ -120,7 +120,9 @@
     }
 
     .text-container{
-        text-align: justify; /*justify text to take the whole width*/
+        /*text-align: justify;*/ /*justify text to take the whole width*/
+        text-align: center;
+        font-size: 1.125rem;
     }
 
     
